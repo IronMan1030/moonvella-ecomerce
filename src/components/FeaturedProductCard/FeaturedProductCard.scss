@@ -1,0 +1,8 @@
+.Featured-Product-card-container {
+  & > img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    padding: 5px;
+  }
+}

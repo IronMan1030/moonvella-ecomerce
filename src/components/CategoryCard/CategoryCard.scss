@@ -1,0 +1,29 @@
+.category-card-container {
+  border-radius: 4px;
+  .category-card > img {
+    width: 255px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .category-card-detail {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+  }
+  .category-card-detail > h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: #1978a5a1;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background 0.2s linear;
+  }
+  .category-card-detail > h3:hover {
+    background-color: var(--light-teal);
+    cursor: pointer;
+  }
+}

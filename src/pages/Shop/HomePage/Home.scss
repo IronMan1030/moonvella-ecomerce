@@ -1,0 +1,21 @@
+.home-wrapper {
+  .featured-category-block {
+    margin-top: 30px;
+  }
+  .featured-product-block {
+    margin-top: 30px;
+  }
+  .signIn-marketing-block {
+    margin-top: 30px;
+    background-color: var(--light-teal);
+    text-align: center;
+    padding: 30px;
+    border-radius: 4px;
+    & > h3 {
+      color: white;
+    }
+    & > p {
+      color: white;
+    }
+  }
+}

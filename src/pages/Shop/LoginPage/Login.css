@@ -1,0 +1,59 @@
+.login-section h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+.login-section h2 {
+  font-size: 25px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: var(--light-green);
+  position: relative;
+  padding-bottom: 10px;
+}
+.login-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.login-section h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.login-section label {
+  color: #2c4964;
+}
+.login-section .login-header {
+  height: 80px;
+}
+.login-section .forgot-password > a {
+  color: var(--light-green);
+}
+.login-section .login-body {
+  display: block;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  width: 435px;
+  margin: auto;
+  padding: 25px;
+  margin-bottom: 80px;
+}
+.login-section .to-register .line-center {
+  margin: 0;
+  padding: 0 10px;
+  background: #fff;
+  display: inline-block;
+}
+.login-section .to-register > p {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+.login-section .to-register > p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}

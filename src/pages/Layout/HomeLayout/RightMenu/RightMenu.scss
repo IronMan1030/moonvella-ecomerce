@@ -1,0 +1,19 @@
+.nav-cart-count-container {
+  position: relative;
+  padding-left: 25px;
+  bottom: 6px;
+  .nav-cart-count {
+    position: relative;
+    left: 19px;
+    right: auto;
+    top: 18px;
+    -webkit-box-pack: center;
+    color: var(--light-green);
+    font-weight: 600;
+  }
+}
+.nav-cart-title {
+  color: var(--light-green);
+  font-weight: 700;
+  margin-top: 10px;
+}

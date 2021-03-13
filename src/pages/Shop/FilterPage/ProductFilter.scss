@@ -1,0 +1,38 @@
+.filter-wrapper {
+  background-color: #fff;
+  border: 1px solid #f1f1f2;
+  .filter-header {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+  }
+  .filter-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    .filter-price > div {
+      height: 40px;
+    }
+  }
+  label {
+    color: var(--light-green);
+    font-weight: 700;
+  }
+  .list-item {
+    list-style: none;
+    padding: 5px;
+    div {
+      color: var(--text-color);
+      font-weight: 500;
+    }
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+    }
+    a:hover {
+      color: var(--light-green);
+    }
+  }
+}

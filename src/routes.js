@@ -12,6 +12,7 @@ import {
   SETTINGS,
   MESSAGES,
   PRODUCT_RESULT_PAGE,
+  DESCRIPTION
 } from "./settings/constants";
 
 import { InLineLoader } from "./components/InlineLoader/InlineLoader";
@@ -26,6 +27,7 @@ const Dashboard = lazy(() => import("./pages/Dashboard/Dashboard"));
 const Products = lazy(() => import("./pages/Products/Products"));
 const Orders = lazy(() => import("./pages/Orders/Orders"));
 const Category = lazy(() => import("./pages/Category/Category"));
+const DescriptionPage = lazy(() => import("./pages/Shop/DescriptionPage/DescriptionPage"));
 const Settings = lazy(() => import("./pages/Settings/Settings"));
 const Messages = lazy(() => import("./pages/Messages/Messages"));
 
@@ -161,6 +163,14 @@ const Routes = () => {
           <HomeLayout>
             <Suspense fallback={<InLineLoader />}>
               <ProductResultPage />
+            </Suspense>
+          </HomeLayout>
+        </PublicRoute>
+
+        <PublicRoute exact={true} path={DESCRIPTION}>
+          <HomeLayout>
+            <Suspense fallback={<InLineLoader />}>
+              <DescriptionPage/>
             </Suspense>
           </HomeLayout>
         </PublicRoute>

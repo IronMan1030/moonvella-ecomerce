@@ -6,6 +6,7 @@ export const REGISTER = "/signup";
 export const LOGIN = "/login";
 export const LOGOUT = "/logout";
 export const PRODUCT_RESULT_PAGE = "/category/:cate_name";
+export const DESCRIPTION = "/description/:cate_name";
 // Vendor Dashboard
 export const DASHBOARD = "/admin/dashboard";
 export const PRODUCTS = "/admin/products";

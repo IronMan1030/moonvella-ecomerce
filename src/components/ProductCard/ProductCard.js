@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   ProductCardWrapper,
   ProductImageWrapper,
@@ -18,6 +20,7 @@ import {
 
 const ProductCard = ({
   title,
+  descriptionPath,
   image,
   weight,
   price,
@@ -40,7 +43,9 @@ const ProductCard = ({
   //     [dispatch, data]
   //   );
   return (
+    
     <ProductCardWrapper {...props} className="product-card">
+      <Link to={descriptionPath}>
       <ProductImageWrapper>
         <Image url={image} className="product-image" />
         {discountInPercent && discountInPercent !== 0 ? (
@@ -67,11 +72,13 @@ const ProductCard = ({
               </DiscountedPrice>
             ) : null}
           </ProductPriceWrapper>
-
+          
           <OrderID>{orderId}</OrderID>
         </ProductMeta>
-      </ProductInfo>
-    </ProductCardWrapper>
+        </ProductInfo>
+        </Link>
+      </ProductCardWrapper>
+
   );
 };
 
